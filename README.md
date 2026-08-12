@@ -7,7 +7,7 @@ Official implementation of **Instant Episode Repetition (IER)** introduced in:
 > **Reinforcement Learning Conference (RLC), 2026**
 
 <p align="center">
-  <img src="asset/IER.png" width="850" alt="Instant Episode Repetition">
+  <img src="assets/IER.png" width="850" alt="Instant Episode Repetition">
 </p>
 
 <p align="center">
@@ -228,7 +228,7 @@ The results demonstrate that successful behaviours can be reused not only throug
 ```text
 instant-episode-repetition/
 │
-├── asset/
+├── assets/
 │   └── IER.png
 │
 ├── algorithms/
