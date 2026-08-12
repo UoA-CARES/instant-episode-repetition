@@ -1,10 +1,9 @@
 # Instant Episode Repetition (IER)
 
-Official implementation of **Instant Episode Repetition (IER)** introduced in:
+Official implementation of **Instant Episode Repetition (IER)**, introduced in our RLC 2026 paper:
 
-> **Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning**
-> Hoda Yamani, Yuning Xing, Koen van Rijnsoever, Bruce A. MacDonald, and Henry Williams
-> **Reinforcement Learning Conference (RLC), 2026**
+> **Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning**  
+> *Yamani et al., Reinforcement Learning Conference (RLC), 2026*
 
 <p align="center">
   <img src="assets/IER.png" width="850" alt="Instant Episode Repetition">
@@ -34,54 +33,49 @@ This allows the agent to collect additional experience around behaviours that ha
 
 Consider an episode
 
-[
-\tau = {(s_0,a_0,r_0), \ldots, (s_T,a_T,r_T)},
-]
+$$
+\tau = \{(s_0,a_0,r_0), \ldots, (s_T,a_T,r_T)\}
+$$
 
 with cumulative episode reward
 
-[
+$$
 R_{\mathrm{ep}}(\tau)
-=====================
-
-\sum_{t=0}^{T} r_t.
-]
+=
+\sum_{t=0}^{T} r_t
+$$
 
 IER keeps track of the highest episode reward observed so far.
 
 If
 
-[
+$$
 R_{\mathrm{ep}}(\tau) > R_{\max},
-]
+$$
 
 the action sequence from that episode
 
-[
+$$
 \mathbf{a}^{*}
-==============
-
+=
 (a_0^{*}, a_1^{*}, \ldots, a_T^{*})
-]
+$$
 
 is stored.
 
-The agent then enters **repetition mode** for (RN) subsequent episodes.
+The agent then enters **repetition mode** for $RN$ subsequent episodes.
 
 During repetition, instead of selecting actions from the current policy,
 
-[
+$$
 a_t \sim \pi_{\theta}(\cdot \mid s_t),
-]
+$$
 
 the stored action sequence is re-executed:
 
-[
+$$
 a_t = a_t^{*}.
-]
-
-After the repetition phase is complete, the agent returns to standard policy-driven interaction.
-
+$$
 ---
 
 ## Interaction Modes
