@@ -33,49 +33,55 @@ This allows the agent to collect additional experience around behaviours that ha
 
 Consider an episode
 
-$$
+```math
 \tau = \{(s_0,a_0,r_0), \ldots, (s_T,a_T,r_T)\}
-$$
+```
 
 with cumulative episode reward
 
-$$
+```math
 R_{\mathrm{ep}}(\tau)
 =
 \sum_{t=0}^{T} r_t
-$$
+```
 
-IER keeps track of the highest episode reward observed so far.
+IER keeps track of the highest episode reward observed so far, denoted by $R_{\max}$.
 
-If
+If the current episode achieves a new maximum reward,
 
-$$
-R_{\mathrm{ep}}(\tau) > R_{\max},
-$$
+```math
+R_{\mathrm{ep}}(\tau) > R_{\max}
+```
 
-the action sequence from that episode
+IER stores the corresponding action sequence
 
-$$
+```math
 \mathbf{a}^{*}
 =
 (a_0^{*}, a_1^{*}, \ldots, a_T^{*})
-$$
+```
 
-is stored.
+and updates the best observed reward.
 
-The agent then enters **repetition mode** for $RN$ subsequent episodes.
+The agent then enters **repetition mode** for $RN$ consecutive episodes, where $RN$ is the Repetition Number controlling the strength of repetition.
 
-During repetition, instead of selecting actions from the current policy,
+During normal interaction, actions are selected from the current policy:
 
-$$
-a_t \sim \pi_{\theta}(\cdot \mid s_t),
-$$
+```math
+a_t \sim \pi_{\theta}(\cdot \mid s_t)
+```
 
-the stored action sequence is re-executed:
+During repetition, the policy-selected action is temporarily replaced by the corresponding action from the stored successful sequence:
 
-$$
-a_t = a_t^{*}.
-$$
+```math
+a_t = a_t^{*}
+```
+
+After the $RN$ repetition episodes are completed, the agent returns to standard policy-driven interaction.
+
+All transitions collected during both normal interaction and repetition are stored in the replay buffer and used for standard off-policy updates.
+
+Therefore, IER changes **how new experience is collected**, while leaving the underlying RL network architecture, objective functions, and optimisation procedure unchanged.
 ---
 
 ## Interaction Modes
