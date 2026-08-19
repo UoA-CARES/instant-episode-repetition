@@ -403,12 +403,15 @@ University of Auckland, New Zealand
 If you use IER or this repository in your research, please cite:
 
 ```bibtex
-@inproceedings{yamani2026repetition,
-  title     = {Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning},
-  author    = {Yamani, Hoda and Xing, Yuning and van Rijnsoever, Koen and MacDonald, Bruce A. and Williams, Henry},
-  booktitle = {Reinforcement Learning Conference},
-  year      = {2026}
+ @article{yamani2026repetition,
+    title={Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning},
+    author={Hoda Yamani and Yuning Xing and Koen van Rijnsoever and Bruce A. MacDonald and Henry Williams},
+    journal={Reinforcement Learning Journal},
+    volume={7},
+    pages={},
+    year={2026}
 }
+
 ```
 
 ---
