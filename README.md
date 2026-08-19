@@ -391,7 +391,7 @@ Hoda Yamani, Yuning Xing, Koen van Rijnsoever, Bruce A. MacDonald, and Henry Wil
 Reinforcement Learning Conference (RLC), 2026
 
 **Affiliation:**
-Robot Learning Team
+Robot Learning Team,
 Centre for Automation and Robotic Engineering Science (CARES)
 Department of Electrical, Computer and Software Engineering
 University of Auckland, New Zealand
