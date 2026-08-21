@@ -376,23 +376,22 @@ for each environment interaction:
         reset environment
 ```
 
-The key distinction is that repetition changes **which actions are executed during environment interaction**, while the underlying RL optimisation remains unchanged.
+The key distinction is that repetition changes **which actions are executed during environment interaction**, while the underlying RL optimization remains unchanged.
 
 ---
 
 ## Paper
 
 **Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning**
-
-**Authors:**
 Hoda Yamani, Yuning Xing, Koen van Rijnsoever, Bruce A. MacDonald, and Henry Williams
 
-**Conference:**
-Reinforcement Learning Conference (RLC), 2026
+Published in the **Reinforcement Learning Journal (RLJ), Volume 7, 2026**.
+
+**Paper:** [Reinforcement Learning Journal](https://rlj.cs.umass.edu/2026/papers/Paper16.html)
+**arXiv:** [arXiv:2608.17347](https://arxiv.org/abs/2608.17347)
 
 **Affiliation:**
-Robot Learning Team,
-Centre for Automation and Robotic Engineering Science (CARES)
+Robot Learning Team, Centre for Automation and Robotic Engineering Science (CARES)
 Department of Electrical, Computer and Software Engineering
 University of Auckland, New Zealand
 
@@ -400,20 +399,17 @@ University of Auckland, New Zealand
 
 ## Citation
 
-If you use IER or this repository in your research, please cite:
+If you use **Instant Episode Repetition (IER)** or this repository in your research, please cite:
 
 ```bibtex
- @article{yamani2026repetition,
-    title={Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning},
-    author={Hoda Yamani and Yuning Xing and Koen van Rijnsoever and Bruce A. MacDonald and Henry Williams},
-    journal={Reinforcement Learning Journal},
-    volume={7},
-    pages={},
-    year={2026}
+@article{yamani2026repetition,
+  title   = {Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning},
+  author  = {Yamani, Hoda and Xing, Yuning and van Rijnsoever, Koen and MacDonald, Bruce A. and Williams, Henry},
+  journal = {Reinforcement Learning Journal},
+  volume  = {7},
+  year    = {2026}
 }
-
 ```
-
 ---
 
 ## Code
