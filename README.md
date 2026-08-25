@@ -1,9 +1,13 @@
 # Instant Episode Repetition (IER)
 
-Official implementation of **Instant Episode Repetition (IER)**, introduced in our RLC 2026 paper:
-
-> **Repetition as Reinforcement: Enhancing Sample Efficiency via Instant Episode Repetition in Reinforcement Learning**  
-> *Yamani et al., Reinforcement Learning Conference (RLC), 2026*
+[![arXiv](https://img.shields.io/badge/arXiv-2608.17347-b31b1b.svg)](https://arxiv.org/abs/2608.17347)
+[![RLJ 2026](https://img.shields.io/badge/RLJ-2026-4B0082)](https://rlj.cs.umass.edu/2026/papers/Paper16.html)
+[![RLC 2026](https://img.shields.io/badge/RLC-2026-6A5ACD)](https://rl-conference.cc/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Implementation-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![MuJoCo](https://img.shields.io/badge/Benchmark-MuJoCo-00599C)](https://mujoco.org/)
+[![DeepMind Control Suite](https://img.shields.io/badge/Benchmark-DeepMind%20Control%20Suite-blue)](https://github.com/google-deepmind/dm_control)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 <p align="center">
   <img src="assets/IER.png" width="850" alt="Instant Episode Repetition">
